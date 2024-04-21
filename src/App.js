@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+// App.js
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Ajoutez from './pages/Ajoutez';
+import Navbarr from './components/Navbarr';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Rejoindrefinal from './components/Rejoindrefinal';
+import './pages/Explorez';
+import Explorez from './pages/Explorez';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbarr />
+      
+      <BrowserRouter>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="" element={<Home />} />
+          <Route path="/ajout" element={<Ajoutez />} />
+          <Route path="/Explorez" element={<Explorez />} />
+        </Routes>
+      </BrowserRouter>
+      <Rejoindrefinal className="fixed-top" />
     </div>
   );
 }
