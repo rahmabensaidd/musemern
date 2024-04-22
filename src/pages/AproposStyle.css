@@ -1,4 +1,25 @@
 .page-container {
-    height: 100vh;
-    margin-top: 100px;
-}
+    height: 100%;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/images/Elegant_Gold_Stars_Background\ .svg);
+    background-size: 110% ;
+    background-repeat: repeat;
+    background-position: center;
+    }
+    .info-position-label {
+        
+        font-family:cursive;
+         font-size: 2em;
+         display: flex;
+         align-items:end;
+    }
+
+    .position-container{
+        margin:50px 0px 100px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }

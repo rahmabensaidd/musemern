@@ -18,18 +18,17 @@ function Home() {
     <div className="App" style={{ margin: 0, padding: 0,backgroundImage:'' }}>
       
       
-      <div style={{ display: 'flex', alignItems: 'center', backgroundColor: 'black', margin: 0 }}>
+      <div style={{ display: 'flex', alignItems: 'center', backgroundColor: 'black', margin: 0 , padding:0}}>
         <div style={{ backgroundColor: 'black', /*position: 'relative'*/  marginLeft: 0 , height:'80%'}}>
           <video
             src="/Journée de la santé mentale en entreprise ‐ Réalisée avec Clipchamp.mp4"
-            height="40%" 
-            width="110%" 
+            height="30%" 
+            width="100%" 
             autoPlay
             loop
             muted
           />
         </div>
-        <div style={{ backgroundColor: 'black', height: '150px' }}></div>
      </div> 
     <div style={{ backgroundColor: 'black', height: '40px' }}></div>
       

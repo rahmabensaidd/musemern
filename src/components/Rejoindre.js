@@ -6,18 +6,18 @@ function Rejoindre() {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <a href="https://www.facebook.com/" style={{ margin: '0 10px' }}>
-        <FaFacebook size={30} />
+        <FaFacebook size={30} color="#4267B2" />
       </a>
       <a href="https://www.youtube.com/" style={{ margin: '0 10px' }}>
-        <FaYoutube size={30} />
+        <FaYoutube size={30} color="#FF0000" />
       </a>
       <a href="https://www.tiktok.com/" style={{ margin: '0 10px' }}>
-        <FaTiktok size={30} />
+        <FaTiktok size={30} color="#000000"/>
       </a>
       <a href="https://www.instagram.com/" style={{ margin: '0 10px' }}>
-        <FaInstagram size={30} />
+        <FaInstagram size={30} color="#E1306C" />
       </a>
-      <Button variant="outline-primary" style={{ margin: '0 350px',width:'300px' }}>Savoir Plus</Button>
+      <Button href="/Apropos" variant="outline-primary" style={{ margin: '0 350px',width:'300px'  }}>Savoir Plus</Button>
     </div>
   );
 }

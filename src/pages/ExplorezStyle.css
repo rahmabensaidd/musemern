@@ -19,6 +19,9 @@
   flex-direction: column;
   justify-items: center;
   align-items: center;
+  background-color: #f5ddd7;
+background-image: linear-gradient(332deg, #f5ddd7 0%, #f9d7b1 100%);
+
   
 }
 .input-button-container{
