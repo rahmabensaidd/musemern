@@ -7,7 +7,7 @@ const PORT = 5000;
 
 const UploadRoute = require("./routes/UploadRoute");
 app.use(cors({
-    origin: 'http://localhost:3000' // Autorise l'accès depuis http://localhost:5000
+    origin: 'http://127.0.0.1:3000' 
   }));
 // Middleware
 app.use(express.json());
