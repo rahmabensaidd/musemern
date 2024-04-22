@@ -20,7 +20,7 @@ nav {
   color: rgb(67, 1, 128);
   font-size: 60px;
   height: 65px;
-  position: fixed;
+ 
   right: 0;
   bottom: 0;
   margin: 2rem;
@@ -43,7 +43,7 @@ nav {
 
 .grid__item img {
   width: 100%;
-  height: 80%;
+  height: 70%;
   object-fit: cover;
 }
 

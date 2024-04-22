@@ -11,7 +11,7 @@ import AproposIcon from './icons/AproposIcon';
 
 function Navbarr() {
   return (
-<Navbar collapseOnSelect expand="lg" className="navbar-dark bg-black fixed-top">
+    <Navbar collapseOnSelect expand="lg" className="navbar-dark navbar-blur fixed-top">
       <Container>
       <Navbar.Brand href="#home">
       <img

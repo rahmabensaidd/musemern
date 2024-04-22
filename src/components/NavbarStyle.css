@@ -1,20 +1,36 @@
-.button-container{
+.navbar-blur {
+    background-color: rgba(117, 115, 115, 0.5); /* Couleur de fond semi-transparente */
+    backdrop-filter: blur(0.2px); /* Flou de l'arrière-plan */
+
+  }
+.button-container {
     display: flex;
     flex-direction: row;
-}
-.label-container{
+  }
+  
+  .label-container {
     margin-left: -5px;
     width: 100px;
-}
-
-.me-auto{
+    color: black; /* Couleur du texte */
+  }
+  
+  .me-auto {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: space-between 100px;
+    align-items: space-between 100px; /* Il semble y avoir une erreur ici, vous devriez utiliser 'align-items: center' ou 'align-items: flex-end' */
     width: 300px;
-}
-.navbar-dark{
-    box-shadow: 0px 0px 20px 0px;
+  }
+  
+  .navbar-dark {
+    box-shadow: 0px 0px 20px 10px;
+  }
+  .navbar-dark .nav-link {
+    color: rgb(8, 8, 8); /* Couleur des liens */
+  }
+  
+  .navbar-dark .nav-link:hover {
+    color: black; /* Couleur des liens au survol */
+  }
 
-}
+  

@@ -1,0 +1,76 @@
+.heart {
+    color: #ccc; /* Couleur du cœur vide */
+    font-size: 2rem; /* Taille du cœur */
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    transform-origin: bottom;
+}
+
+.heart.liked {
+    color: red; /* Couleur du cœur rempli */
+}
+
+
+.box {
+    width: 10rem;
+    height: 10rem;
+   
+
+}
+.rise {
+    animation-name: rise;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+  
+  @keyframes rise {
+    0% {
+      transform: translateY(0) rotate(5deg);
+    }
+    20% {
+      transform: translateY(-40px) rotate(-10deg);
+    }
+    40% {
+      transform: translateY(-90px) rotate(10deg);
+    }
+  
+    60% {
+      transform: translateY(-150px);
+    }
+  
+    80% {
+      transform: translateY(-150px);
+    }
+  
+    100% {
+      transform: translateY(-150px);
+    }
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: scale(1, 1) translateY(0);
+    }
+    10% {
+      transform: scale(1.1, 0.9) translateY(0);
+    }
+    30% {
+      transform: scale(0.9, 1.1) translateY(-10px);
+    }
+    50% {
+      transform: scale(1.05, 0.95) translateY(0);
+    }
+    57% {
+      transform: scale(1, 1) translateY(-7px);
+    }
+    64% {
+      transform: scale(1, 1) translateY(0);
+    }
+    100% {
+      transform: scale(1, 1) translateY(0);
+    }
+  }

@@ -3,12 +3,13 @@ import Rating from "./Rating";
 import { BsTrashFill } from "react-icons/bs";
 import axios from "axios";
 import './btnd.css';
+import Heart from "./Heart.js";
 
 const Grid = ({ photos, setUpdateUI }) => {
   const [photosList, setPhotosList] = useState(photos);
 
   useEffect(() => {
-    setPhotosList(photos); // Mettre à jour la liste des photos lorsque les photos changent
+    setPhotosList(photos);
   }, [photos]);
 
   const deletePhoto = (_id) => {
@@ -16,12 +17,11 @@ const Grid = ({ photos, setUpdateUI }) => {
       .delete(`http://localhost:5000/api/delete/${_id}`)
       .then((res) => {
         console.log("Photo deleted successfully");
-        // Mettre à jour la liste des photos après la suppression
         axios
           .get("http://localhost:5000/api/get")
           .then((res) => {
             console.log(res.data);
-            setPhotosList(res.data); // Mettre à jour la liste des photos après la suppression
+            setPhotosList(res.data);
           })
           .catch((err) => console.log(err));
       })
@@ -40,10 +40,10 @@ const Grid = ({ photos, setUpdateUI }) => {
                   src={`http://localhost:5000/uploads/${photo}`}
                   alt="grid_image"
                 />
-                {/* Passer l'ID de la photo au lieu de la photo entière */}
                 <Rating />
+                {/* Inclure le composant Heart ici */}
+                <Heart />
                 <button onClick={() => deletePhoto(_id)} className="buttonn">
-                  {/* Supprimez la photo lors du clic sur le bouton */}
                   <BsTrashFill style={{ color: "red" }} />
                 </button>
               </>
