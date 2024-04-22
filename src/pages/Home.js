@@ -2,16 +2,15 @@ import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import museumImage from '../assets/images/carte.jpg';
+import museumImage from '../assets/images/Taww.jpg';
 
 import image1 from '../assets/images/t12.jpg';
 import '../assets/styles/Home.css';
 import Even from '../components/Even'; 
 
-import Quisommes from '../components/Quisommes';
-import Feedback from '../components/Feedback';
-import Visite from '../components/Visite';
 
+import Feedback from '../components/Feedback';
+import '../components/Even.css';
 
 function Home() {
   return (
@@ -31,31 +30,28 @@ function Home() {
         </div>
      </div> 
     <div style={{ backgroundColor: 'black', height: '40px' }}></div>
-      
+     
       <div className="background-container" style={{ background: `url(${image1})`, backgroundSize: 'cover', borderRadius: '10px', margin: 0 }}>
         <img src={museumImage} alt="Musée Le Pinceau" className="right-image" />
       </div>
       <br></br>
-      <br></br>
-      <br></br>
-    
+     
     
 
 
   
 
   <div style={{ textAlign: 'center' }}>
-    <br></br>
-      <br></br>
+    
+      <div className='even-container'>
   <h1 style={{ fontFamily: 'serif' }}>Nos Evènnements </h1>
 
 <br></br>
-
+<Even/>
       </div>
- <Even/>
- <br></br>
- <br></br>
-  <Quisommes/> 
+ 
+ 
+ </div>
   <br></br>
   <br></br>
   <br></br>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
-import backgroundImage from '../assets/images/La-melodie-du-Covid-long.jpg';
+import backgroundImage from '../assets/images/capture.jpg';
 
 function Feedback() {
   const [feedback, setFeedback] = useState({
@@ -35,6 +35,7 @@ function Feedback() {
             value={feedback.name}
             onChange={handleChange}
             placeholder="Entrez votre nom"
+            style={{ background: 'rgba(255, 255, 255, 0.5)' }} // Fond transparent
           />
         </Form.Group>
 
@@ -46,6 +47,7 @@ function Feedback() {
             value={feedback.email}
             onChange={handleChange}
             placeholder="Entrez votre email"
+            style={{ background: 'rgba(255, 255, 255, 0.5)' }} // Fond transparent
           />
         </Form.Group>
 
@@ -58,6 +60,7 @@ function Feedback() {
             onChange={handleChange}
             placeholder="Entrez votre message"
             rows={4}
+            style={{ background: 'rgba(255, 255, 255, 0.5)' }} // Fond transparent
           />
         </Form.Group>
          <br></br>
