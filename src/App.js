@@ -8,6 +8,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Rejoindrefinal from './components/Rejoindrefinal';
 import './pages/Explorez';
 import Explorez from './pages/Explorez';
+import Apropos from './pages/Apropos';
+
+
 function App() {
   return (
     <div className="App">
@@ -19,6 +22,7 @@ function App() {
           <Route path="" element={<Home />} />
           <Route path="/ajout" element={<Ajoutez />} />
           <Route path="/Explorez" element={<Explorez />} />
+          <Route path="/Apropos" element={<Apropos />} />
         </Routes>
       </BrowserRouter>
       <Rejoindrefinal className="fixed-top" />
