@@ -1,0 +1,11 @@
+.even-container {
+    background-image: url('/assets/images/golimm.jpg');
+    background-size:auto;
+    background-position: center;
+   /* display: flex;*/
+    justify-content: center;
+    padding: 30px; 
+    padding-right: 100px;
+    padding-left: 100px;/* Ajustez le remplissage selon vos besoins */
+  }
+  
