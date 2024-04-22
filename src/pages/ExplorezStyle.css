@@ -14,6 +14,37 @@
   padding-bottom: 10px;
 }
 
+.Gift-container{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  
+}
+.input-button-container{
+  margin: 100px 100px 100px 200px ;
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+#giftBtn{
+  background: none;
+  border: none;
+}
+
+.input-button-container>input{
+  padding: 20px;
+  width: 350px;
+  border-radius: 10px;
+  border-style: dashed;
+  height: 70px;
+}
+#emailInputField:hover{
+  cursor: grap;
+}
 
 h1{
 

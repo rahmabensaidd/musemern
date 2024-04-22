@@ -1,13 +1,51 @@
 import React from "react";
 import Visite from "../components/Visite";
 import "./ExplorezStyle.css";
+import GiftIcon from "../components/icons/GiftIcon";
+import { useState } from "react";
+import axios from "../api/axios";
+
 const Explorez = () => {
+  const [email, setEmail] = useState("");
+  const handleInputChange = (event) => {
+    setEmail(event.target.value);
+      console.log(email);
+  };
+  
+  const sendGift = async (event) => {
+    event.preventDefault(); // Prevent default form submission behavior
+    try {
+      const response = await axios.post(
+        "/sendEmail",
+        { email:email },
+        {
+          headers: { "Content-Type": "application/json" },
+          withCredentials: true,
+        }
+      );
+      console.log(response.data);
+    } catch (error) {
+      console.error("Error sending gift", error);
+    }
+  }
+
   return (
+
     <div>
       <div className="museum-container" style={{ textAlign: "center" }}>
         <h1>Visitez notre musée virtuel </h1>
         <br></br>
         <Visite />
+      </div>
+      <div className="Gift-container">
+        <h1 className="gift-container-title">N'oubliez pas d'accrocher votre cadeau !</h1>
+        <div className="input-button-container">
+        
+            <input id="emailInputField" value={email} type="email" placeholder="Passez votre email " onChange={handleInputChange}></input>
+            <button onClick={sendGift} id="giftBtn"> <GiftIcon  /> </button>
+
+        </div>
+        
       </div>
       <div className="games-container">
         <h1>Jouez </h1>
