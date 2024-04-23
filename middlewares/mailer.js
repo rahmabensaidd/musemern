@@ -13,10 +13,12 @@ const sendEmail =  async (option) => {
     })
 
     const emailOptions = {
-        from: `${process.env.EMAIL_USER}`,
+        from: `Musée le pinceau médical <${process.env.EMAIL_USER}>`,
         to: option.email,
         subject: option.subject,
-        text: option.message
+        text: option.message,
+        html:option.html,
+        attachments:option.attachments
     }
 
     await transporter.sendMail(emailOptions);
