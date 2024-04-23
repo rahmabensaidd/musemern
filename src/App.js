@@ -17,11 +17,12 @@ function App() {
       <Navbarr />
       <BrowserRouter>
         <Routes>
+        <Route path="/Apropos" element={<Apropos />} />
           <Route path="/home" element={<Home />} />
-          <Route path="" element={<Home />} />
+          <Route path="" element={<Apropos />} />
           <Route path="/ajout" element={<Ajoutez />} />
           <Route path="/Explorez" element={<Explorez />} />
-          <Route path="/Apropos" element={<Apropos />} />
+          
         </Routes>
       </BrowserRouter>
       <Rejoindrefinal className="fixed-top" />
