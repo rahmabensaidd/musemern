@@ -44,7 +44,7 @@ const Grid = ({ photos, setUpdateUI }) => {
                 {/* Inclure le composant Heart ici */}
                 <Heart />
                 <button onClick={() => deletePhoto(_id)} className="buttonn">
-                  <BsTrashFill style={{ color: "red" }} />
+                  <BsTrashFill style={{ color: "gray" }} />
                 </button>
               </>
             ) : (

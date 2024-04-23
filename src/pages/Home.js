@@ -2,7 +2,7 @@ import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import museumImage from '../assets/images/Taww.jpg';
+import museumImage from '../assets/images/carte1.jpg';
 
 import image1 from '../assets/images/t12.jpg';
 import '../assets/styles/Home.css';
