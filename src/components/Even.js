@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import cat1 from '../assets/images/lab.jpg'; // Importez vos images
 import cat2 from '../assets/images/med.png';
 import cat3 from '../assets/images/conf.jpg';
-import cat4 from '../assets/images/conf.jpg';
+import cat4 from '../assets/images/ins.jpg';
 
 function Even() {
   const transparentCardStyle = {
