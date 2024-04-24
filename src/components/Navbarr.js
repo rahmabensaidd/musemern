@@ -31,6 +31,10 @@ function Navbarr() {
               <Nav.Link href="/home">Accueil</Nav.Link>
             </div>
             
+            <div className='button-container'> 
+              <AddIcon/>
+              <Nav.Link href="/ajout" className="label-container" >Ajoutez</Nav.Link>
+            </div>
 
             <div className='button-container'> 
               <GamePadIcon/>              
@@ -38,10 +42,6 @@ function Navbarr() {
             </div>
            
            
-            <div className='button-container'> 
-              <AddIcon/>
-              <Nav.Link href="/ajout" className="label-container" >Ajoutez</Nav.Link>
-            </div>
 
             <div className='button-container'> 
               <AproposIcon/>
